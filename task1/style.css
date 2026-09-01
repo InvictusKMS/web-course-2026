@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     background-color: #2c3e50;
     color: white;
@@ -14,4 +18,97 @@ header {
     margin-bottom: 30px;
 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto;
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #0e4730;
+    color: white;
+    padding: 25px;
+    font-size: 20px;
+    line-height: 1.6;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 25px;
+    margin: 20px 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.skill {
+    background-color: #e0e7ff;
+    color: #1f2937;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contacts {
+    margin-top: 40px;
+    padding: 20px;
+
+    background-color: #2c3e50;
+    color: white;
+
+    text-align: center;
+    border-radius: 15px;
+}
+
+.contacts h2 {
+    margin-bottom: 15px;
+}
+
+.contacts a {
+    color: white;
+    text-decoration: none;
+
+    margin: 0 10px;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+.contacts a:hover {
+    color: #c7d2fe;
+    text-decoration: underline;
 }
