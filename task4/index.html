@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Быки и коровы — логическая игра</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body><header class="topbar"><a class="brand" href="../task1/index.html">ВХ / учебные проекты</a><a href="../task3/index.html">Список задач ↗</a></header>
+<main><header><p class="eyebrow">04 / ЛОГИЧЕСКАЯ ИГРА</p><h1>Четыре цифры.<br>Одна разгадка.</h1><p class="subtitle">Быки и коровы — проверьте свою логику.</p></header><section class="rules" aria-label="Правила"><article><span class="symbol">●</span><h2>Бык</h2><p>Цифра угадана<br>и стоит на своём месте.</p></article><article><span class="symbol cow">○</span><h2>Корова</h2><p>Цифра есть в числе,<br>но стоит в другом месте.</p></article></section><section class="panel" aria-label="Игровое поле"><div class="game-status"><p class="stats" id="counter" aria-live="polite">Попыток: 0</p><button type="button" id="new-game">Новая игра ↻</button></div><form class="entry-form" id="guess-form" novalidate><label for="guess-input">Ваше предположение</label><input id="guess-input" type="text" inputmode="numeric" autocomplete="off" placeholder="Например, 1234" aria-describedby="hint feedback"><button id="check" class="primary" type="submit">Проверить ↗</button></form><p id="hint" class="footnote">Ровно 4 разные цифры от 0 до 9. Ноль в начале разрешён.</p><p class="feedback" id="feedback" role="status" aria-live="polite"></p><header class="history-title"><h2>История попыток</h2><span>● быки &nbsp; ○ коровы</span></header><ol id="history" aria-label="История попыток"></ol><p id="empty" class="empty">Число загадано. Сделайте первый ход.</p></section><p class="footnote">Число не меняется до новой игры. Ошибочный ввод не расходует попытку.</p></main><footer class="page-footer">Владислав Хоменко · Лабораторная работа №4</footer>
+</body>
+</html>
