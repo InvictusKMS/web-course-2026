@@ -1,4 +1,4 @@
-/* Лабораторная 1: раскладка только Flexbox, без Grid, JS и медиазапросов. */
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; background: #f5f3ee; color: #202c29; font-family: Arial, sans-serif; line-height: 1.6; display: flex; flex-direction: column; }
