@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +8,45 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<body><header class="topbar"><a class="brand" href="../task1/index.html">ВХ / учебные проекты</a><a href="../task4/index.html">Быки и коровы ↗</a></header>
-<main><header><p class="eyebrow">03 / СПИСОК ЗАДАЧ</p><h1>Меньше хаоса.<br>Больше сделанного.</h1><p class="subtitle">Освободите голову — соберите дела в одном месте.</p></header><section class="panel" aria-label="План на день"><form id="task-form" class="entry-form" novalidate><label for="task-input">Что нужно сделать?</label><input id="task-input" type="text" maxlength="240" autocomplete="off" placeholder="Например, разобраться с Flexbox" aria-describedby="feedback"><button class="primary" type="submit">Добавить +</button></form><p id="feedback" class="feedback" role="status" aria-live="polite"></p><p id="counter" class="stats" aria-live="polite">Осталось: 0, Выполнено: 0</p><div class="filters" role="group" aria-label="Фильтр задач"><button type="button" data-filter="all" aria-pressed="true">Все</button><button type="button" data-filter="active" aria-pressed="false">Активные</button><button type="button" data-filter="completed" aria-pressed="false">Завершённые</button></div><ul id="task-list" aria-label="Задачи"></ul><p id="empty" class="empty"><strong>Можно начать с малого.</strong>Добавьте свою первую задачу.</p></section><p class="footnote">Задачи живут до перезагрузки страницы. Добавлять можно кнопкой или клавишей Enter.</p></main><footer class="page-footer">Владислав Хоменко · Лабораторная работа №3</footer>
+
+<body>
+  <header class="topbar"><a class="brand" href="../task1/index.html">ВХ / учебные проекты</a><a
+      href="../task4/index.html">Быки и коровы ↗</a></header>
+  <main>
+    <header>
+      <p class="eyebrow">03 / СПИСОК ЗАДАЧ</p>
+      <h1>Меньше хаоса.<br>Больше сделанного.</h1>
+      <p class="subtitle">Освободите голову — соберите дела в одном месте.</p>
+    </header>
+    <section class="panel" aria-label="План на день">
+
+      <form id="task-form" class="entry-form" novalidate>
+        <label for="task-input">Что нужно сделать?</label>
+
+        <div class="input-row">
+          <input type="checkbox" id="task-completed" aria-label="Задача уже выполнена">
+
+          <input id="task-input" type="text" maxlength="240" autocomplete="off"
+            placeholder="Например, разобраться с Flexbox" aria-describedby="feedback">
+        </div>
+
+        <button class="primary" type="submit">Добавить +</button>
+      </form>
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+      <p id="counter" class="stats" aria-live="polite">Осталось: 0, Выполнено: 0</p>
+      <div class="filters" role="group" aria-label="Фильтр задач">
+        <button type="button" data-filter="all" aria-pressed="true">Все</button>
+        <button type="button" data-filter="active" aria-pressed="false">Активные</button>
+        <button type="button" data-filter="completed" aria-pressed="false">Завершённые</button>
+      </div>
+      <ul id="task-list" aria-label="Задачи"></ul>
+      <p id="empty" class="empty">
+        <strong>Можно начать с малого.</strong>Добавьте свою первую задачу.
+      </p>
+    </section>
+    <p class="footnote">Задачи живут до перезагрузки страницы. Добавлять можно кнопкой или клавишей Enter.</p>
+  </main>
+  <footer class="page-footer">Владислав Хоменко · Лабораторная работа №3</footer>
 </body>
+
 </html>

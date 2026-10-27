@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="game">
+        <h1>Simon</h1>
+
+        <p>Запоминай цвета и повторяй последовательность.</p>
+
+        <p id="level">Уровень: 0</p>
+        <p id="message">Нажми «Старт», чтобы начать.</p>
+
+        <div class="board">
+            <button class="sector red" type="button"
+                    aria-label="Красный" disabled></button>
+
+            <button class="sector blue" type="button"
+                    aria-label="Синий" disabled></button>
+
+            <button class="sector green" type="button"
+                    aria-label="Зелёный" disabled></button>
+
+            <button class="sector yellow" type="button"
+                    aria-label="Жёлтый" disabled></button>
+        </div>
+
+        <button id="startButton" type="button">Старт</button>
+    </div>
+</body>
+</html>

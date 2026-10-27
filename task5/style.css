@@ -1,0 +1,69 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+.game {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    max-width: 300px;
+    margin: 25px auto;
+}
+
+.sector {
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 15px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.red {
+    background-color: crimson;
+}
+
+.blue {
+    background-color: royalblue;
+}
+
+.green {
+    background-color: forestgreen;
+}
+
+.yellow {
+    background-color: goldenrod;
+}
+
+.sector.active,
+.sector:enabled:active {
+    opacity: 1;
+    transform: scale(1.04);
+    box-shadow: 0 0 12px gray;
+}
+
+.sector:disabled {
+    cursor: default;
+}
+
+#startButton {
+    background-color: royalblue;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#level {
+    font-weight: bold;
+}
